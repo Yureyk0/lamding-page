@@ -1,0 +1,98 @@
+.form {
+  height: 685px;
+  width: 100%;
+  background-image: url("../../../../assets/map.png");
+  background-size: cover;
+
+  font-family: "Lato-Regular";
+  line-height: 1.2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 3px solid white;
+}
+.form-container {
+  width: 330px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 30px 20px 30px;
+
+  background-color: rgba(75, 202, 255, 0.8);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.form-heders {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.form-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.form-block input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+  width: 100%;
+  height: 35px;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  border: none;
+}
+.form-block input[type="textarea"] {
+  height: 145px;
+}
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-family: "Arial";
+  line-height: 2.743;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #999; /* Цвет текста плейсхолдера */
+}
+input[id="subject"]::placeholder,
+input[id="message"]::placeholder {
+  top: 15px;
+}
+.Button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1480px;
+  height: 3305px;
+  z-index: 22;
+}
+
+.button-submit {
+  font-family: "Lato-Black";
+  background-color: rgb(65, 64, 66);
+  color: rgb(114, 179, 204);
+
+  width: 190px;
+  height: 45px;
+  font-size: 15px;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+
+  border-radius: 5px;
+  border: none;
+}

@@ -1,0 +1,71 @@
+.features-wrapper {
+  width: 100%;
+  background: #f9f9f9;
+}
+.features {
+  font-family: "Lato-Black";
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+.features-headers {
+  font-size: 36px;
+  color: rgb(65, 64, 66);
+  line-height: 1.2;
+}
+.features-subheaders {
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  color: rgb(65, 64, 66);
+}
+.features-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 0 100px 0;
+}
+.features-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 33px;
+}
+.features-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 4px solid rgb(239, 239, 239);
+  background-color: rgb(75, 202, 255);
+}
+.features-circle img {
+  width: auto;
+  height: fit-content;
+}
+.item-headers {
+  text-transform: uppercase;
+  color: #414042;
+  font-size: 15px;
+}
+.item-desc {
+  font-family: "Lato-Regular";
+
+  font-size: 13px;
+  color: #838383;
+  line-height: 1.692;
+}
+
+.features-item:hover .features-circle {
+  background-color: #414042;
+}
+.features-item:hover .item-headers {
+  color: #4bcaff;
+}
