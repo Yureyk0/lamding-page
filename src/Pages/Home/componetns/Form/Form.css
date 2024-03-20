@@ -74,14 +74,6 @@ input[id="subject"]::placeholder,
 input[id="message"]::placeholder {
   top: 15px;
 }
-.Button {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1480px;
-  height: 3305px;
-  z-index: 22;
-}
 
 .button-submit {
   font-family: "Lato-Black";
@@ -95,4 +87,5 @@ input[id="message"]::placeholder {
 
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }

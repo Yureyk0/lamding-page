@@ -6,11 +6,6 @@ import androidIcon from "../../../../../../assets/androidIcon.png";
 
 import "./Slide.css";
 
-const style = {
-  display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "flex-end",
-};
 const buttonList = [
   {
     title: "download",
@@ -34,29 +29,31 @@ const platformsList = [
 export const Slide = () => {
   return (
     <div className="slide-background">
-      <BlockWrapper style={style}>
-        <div className="slide-block">
-          <h1 className="slide-headers">
-            Simple, Beautiful <b>and Amazing</b>
-          </h1>
-          <p className="slide-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            repellendus aspernatur illo unde maxime vero similique repellat
-            optio accusantium? Soluta labore sunt sapiente nihil in natus
-            corrupti voluptatibus deserunt minus.
-          </p>
-          <div className="buttons-block">
-            {buttonList.map(({ title, active }) => (
-              <CustomButton title={title} active={active} key={title} />
-            ))}
-          </div>
-          <div className="platforms-block">
-            Aavailable on :
-            {platformsList.map(({ title, image }) => (
-              <div key={title} className="icon-block">
-                <img src={image} alt={title} />
-              </div>
-            ))}
+      <BlockWrapper>
+        <div className="slide-container">
+          <div className="slide-block">
+            <h1 className="slide-headers">
+              Simple, Beautiful <b>and Amazing</b>
+            </h1>
+            <p className="slide-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              repellendus aspernatur illo unde maxime vero similique repellat
+              optio accusantium? Soluta labore sunt sapiente nihil in natus
+              corrupti voluptatibus deserunt minus.
+            </p>
+            <div className="buttons-block">
+              {buttonList.map(({ title, active }) => (
+                <CustomButton title={title} active={active} key={title} />
+              ))}
+            </div>
+            <div className="platforms-block">
+              Aavailable on :
+              {platformsList.map(({ title, image }) => (
+                <div key={title} className="icon-block">
+                  <img src={image} alt={title} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </BlockWrapper>
