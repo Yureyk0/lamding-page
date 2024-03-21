@@ -31,7 +31,7 @@
 .slide-background {
   width: 100%;
   height: 100%;
-  background-image: url(/src/assets/photo_slide.png);
+  background-image: url("../../../../../../assets/photo_slide.png");
   background-size: cover;
 }
 .platforms-block {
@@ -65,7 +65,7 @@
     margin-top: 50px;
   }
   .slide-background {
-    background-image: url(/src/assets/noPhoneBg.png);
+    background-image: url("../../../../../../assets/noPhoneBg.png");
   }
   .slide-container {
     justify-content: center;
