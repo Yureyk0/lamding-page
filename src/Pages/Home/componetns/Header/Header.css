@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
 }
 .logo-block {
   max-width: 135px;
@@ -46,4 +47,87 @@
 }
 .no-active {
   color: #fff;
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #72778d;
+}
+
+.bm-burger-bars-hover {
+  background: #50a3a2;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow: hidden !important;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+.bm-overlay {
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 30px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-item:hover {
+  color: #50a3a2;
+}
+
+.memu-title {
+  color: black;
+  font-size: 40px;
+  margin: 10px 0 50px 0;
+  text-align: center;
+  border-bottom: 3px solid #808080;
+}
+
+.logout {
+  margin-top: auto;
+  border-top: 3px solid #808080;
+  padding-top: 15px;
 }
