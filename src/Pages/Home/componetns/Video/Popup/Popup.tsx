@@ -12,7 +12,6 @@ export const Popup = ({ videoUrl, onClose }: PopupProps) => {
   const { width } = useScreenSize();
 
   const isModile = width < 500;
-  console.log(isModile);
 
   return (
     <div className="popup-container">

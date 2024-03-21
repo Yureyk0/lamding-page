@@ -4,7 +4,7 @@ export const Sidebar = ({ navList }: { navList: string[] }) => {
   return (
     <Menu>
       {navList.map((navItem) => (
-        <a className="menu-item" key={navItem}>
+        <a className="menu-item" key={navItem + "mobile"}>
           {navItem}
         </a>
       ))}

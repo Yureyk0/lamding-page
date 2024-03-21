@@ -28,6 +28,7 @@ export const Header = () => {
                       ? "navbar-item-link active"
                       : "navbar-item-link no-active"
                   }
+                  key={navItem}
                 >
                   {navItem}
                 </a>

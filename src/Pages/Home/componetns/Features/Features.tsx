@@ -20,7 +20,7 @@ export const Features = () => {
           </p>
           <div className="features-list">
             {iconsList.map((icon) => (
-              <div className="features-item">
+              <div className="features-item" key={icon}>
                 <div className="features-circle">
                   <img src={icon} alt={icon} />
                 </div>

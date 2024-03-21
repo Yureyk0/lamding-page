@@ -13,7 +13,7 @@ export const Gallery = () => {
           </p>
           <div className="gallery-list">
             {Array.from(Array(4)).map((_icon, index) => (
-              <div className="gallery-item">
+              <div className="gallery-item" key={_icon}>
                 <div className="gallery-image">
                   <div className="gallery-image-subtitle">
                     SCREEN SHOT #{index + 1}
