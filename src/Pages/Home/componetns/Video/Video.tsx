@@ -5,6 +5,7 @@ import playIcon from "../../../../assets/playIcon.png";
 import "./Video.css";
 import { CSSProperties, useState } from "react";
 import { Popup } from "./Popup/Popup";
+import { VIDEO_URL } from "../../../../constants/constants";
 
 const style: CSSProperties | undefined = {
   display: "flex",
@@ -28,12 +29,7 @@ export const Video = () => {
   };
   return (
     <div className="video-block">
-      {isPopupOpen && (
-        <Popup
-          videoUrl="https://www.youtube.com/watch?v=Gnu7gPY1fbY&ab_channel=Zmodal"
-          onClose={closePopup}
-        />
-      )}
+      {isPopupOpen && <Popup videoUrl={VIDEO_URL} onClose={closePopup} />}
       <BlockWrapper style={style}>
         <img src={playIcon} alt="playIcon" onClick={openPopup} />
         <p className="video-headers">

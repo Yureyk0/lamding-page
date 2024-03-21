@@ -5,17 +5,8 @@ import iosIcon from "../../../../../../assets/iosIcon.png";
 import androidIcon from "../../../../../../assets/androidIcon.png";
 
 import "./Slide.css";
+import { BUTTONS_LIST } from "../../../../../../constants/constants";
 
-const buttonList = [
-  {
-    title: "download",
-    active: false,
-  },
-  {
-    title: "learn more",
-    active: true,
-  },
-];
 const platformsList = [
   {
     title: "ios",
@@ -42,7 +33,7 @@ export const Slide = () => {
               corrupti voluptatibus deserunt minus.
             </p>
             <div className="buttons-block">
-              {buttonList.map(({ title, active }) => (
+              {BUTTONS_LIST.map(({ title, active }) => (
                 <CustomButton title={title} active={active} key={title} />
               ))}
             </div>
