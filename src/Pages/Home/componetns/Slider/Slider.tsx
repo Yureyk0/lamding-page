@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 
 import "./Slider.css";
 
-import photoSlide from "../../../../assets/photo_slide.png";
 import { Slide } from "./components/Slide/Slide";
 
 export const Slider = () => {
@@ -30,10 +29,10 @@ export const Slider = () => {
           <Slide />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={photoSlide} alt="" />
+          <Slide />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={photoSlide} alt="" />
+          <Slide />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -62,4 +62,12 @@
   .swiper {
     height: 500px;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    visibility: hidden;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 12px;
+  }
 }
